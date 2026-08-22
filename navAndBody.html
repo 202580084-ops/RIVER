@@ -1,57 +1,329 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>My Web Page</title>
 
-  <nav>
-        <div align="center">
+    <meta charset="UTF-8">
 
-            <a href="#">Name</a>
-            
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-            <a href="#">About</a>
-            
+    <title>Riverleaf Cafe</title>
 
-            <a href="#">Hobbies</a>
-     
-
-            <a href="#">Contact</a>
-
-        </div>
-    </nav>
+    <link rel="stylesheet" href="index.css">
 
 </head>
 
-  <nav>
-        <ul>
-            <li><a href="#">Name</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Hobbies</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
 
-    <main>
-        <section>
-            <h2>Main Content</h2>
-            <p>This is the main section of the webpage.</p>
-        </section>
+<body>
 
-        <article>
-            <h2>Article Title</h2>
-            <p>This is an article inside the main content.</p>
-        </article>
 
-        <aside>
-            <h3>Sidebar</h3>
-            <p>Additional information goes here.</p>
-        </aside>
-    </main>
+    <!-- NAVIGATION -->
 
-    <footer>
-        <p>&copy; 2026 My Website. All rights reserved.</p>
-    </footer>
+    <header>
+
+        <div class="nav-logo">
+
+            🌿 RIVERLEAF
+
+        </div>
+
+
+        <nav>
+
+            <a href="navAndBody.html">
+                HOME
+            </a>
+
+            <a href="river.html">
+                ABOUT
+            </a>
+
+            <a href="#menu">
+                MENU
+            </a>
+
+            <a href="#gallery">
+                GALLERY
+            </a>
+
+            <a href="#contact">
+                CONTACT
+            </a>
+
+            <a href="register.html" class="register-button">
+                REGISTER
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- HERO -->
+
+    <section class="main-hero">
+
+        <div class="main-content">
+
+            <p class="welcome">
+                Welcome to
+            </p>
+
+
+            <h1>
+                RIVERLEAF<br>
+                CAFE
+            </h1>
+
+
+            <div class="line">
+                ─── 🌿 ───
+            </div>
+
+
+            <p>
+                A cozy place where every cup<br>
+                tells a story.
+            </p>
+
+
+            <a href="#menu" class="button">
+
+                EXPLORE MENU
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FEATURES -->
+
+    <section class="features">
+
+
+        <div class="feature">
+
+            <div class="icon">
+                🌿
+            </div>
+
+            <div>
+
+                <h3>
+                    NATURAL INGREDIENTS
+                </h3>
+
+                <p>
+                    We use locally-sourced and
+                    high-quality ingredients.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="feature">
+
+            <div class="icon">
+                ☕
+            </div>
+
+            <div>
+
+                <h3>
+                    HANDCRAFTED DRINKS
+                </h3>
+
+                <p>
+                    Every drink is made with
+                    passion and creativity.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="feature">
+
+            <div class="icon">
+                🪑
+            </div>
+
+            <div>
+
+                <h3>
+                    COZY ATMOSPHERE
+                </h3>
+
+                <p>
+                    A relaxing space perfect for
+                    work, study, or bonding.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- MENU -->
+
+    <section class="menu-section" id="menu">
+
+
+        <h2>
+            OUR FAVORITES
+        </h2>
+
+
+        <div class="line">
+            ─── 🌿 ───
+        </div>
+
+
+        <div class="menu-container">
+
+
+            <div class="card">
+
+                <img src="riverleaf.png.png"
+                     alt="Matcha Latte">
+
+                <h3>
+                    MATCHA LATTE
+                </h3>
+
+                <p>
+                    Smooth and earthy
+                    matcha latte.
+                </p>
+
+                <h4>
+                    ₱145
+                </h4>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <img src="riverleaf.png.png"
+                     alt="Iced Coffee">
+
+                <h3>
+                    RIVERLEAF ICED COFFEE
+                </h3>
+
+                <p>
+                    Refreshing blend of coffee
+                    and milk.
+                </p>
+
+                <h4>
+                    ₱130
+                </h4>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <img src="riverleaf.png.png"
+                     alt="Cappuccino">
+
+                <h3>
+                    CAPPUCCINO
+                </h3>
+
+                <p>
+                    Classic espresso with
+                    steamed milk.
+                </p>
+
+                <h4>
+                    ₱120
+                </h4>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <img src="riverleaf.png.png"
+                     alt="Cheesecake">
+
+                <h3>
+                    NEW YORK CHEESECAKE
+                </h3>
+
+                <p>
+                    Creamy, rich, and
+                    absolutely delightful.
+                </p>
+
+                <h4>
+                    ₱150
+                </h4>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- GALLERY -->
+
+    <section id="gallery" class="gallery">
+
+        <h2>
+            OUR GALLERY
+        </h2>
+
+        <p>
+            A cozy space surrounded by nature.
+        </p>
+
+    </section>
+
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact">
+
+        <h2>
+            CONTACT US
+        </h2>
+
+        <p>
+            📞 +63 912 345 6789
+        </p>
+
+        <p>
+            📧 hello@riverleafcafe.com
+        </p>
+
+    </section>
+
 
 </body>
 </html>
