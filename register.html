@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Riverleaf Cafe</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #eef0e7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .register-container {
+            width: 100%;
+            max-width: 950px;
+            min-height: 600px;
+            display: flex;
+            background: #f8f5ed;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.18);
+        }
+
+        /* LEFT SIDE */
+        .register-left {
+            width: 45%;
+            background: #23452d;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 55px;
+        }
+
+        .logo {
+            font-family: Georgia, serif;
+            font-size: 32px;
+            letter-spacing: 3px;
+            margin-bottom: 35px;
+        }
+
+        .logo span {
+            font-size: 35px;
+            margin-right: 8px;
+        }
+
+        .register-left h1 {
+            font-family: Georgia, serif;
+            font-size: 45px;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        .register-left p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #e2e6da;
+        }
+
+        .leaf-line {
+            width: 80px;
+            height: 2px;
+            background: #d8ddc8;
+            margin: 20px 0;
+        }
+
+        /* RIGHT SIDE */
+        .register-right {
+            width: 55%;
+            padding: 50px 65px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .register-right h2 {
+            color: #23452d;
+            font-family: Georgia, serif;
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 28px;
+            font-size: 14px;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+            flex: 1;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 7px;
+            color: #344034;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 13px 14px;
+            border: 1px solid #c9c9bd;
+            border-radius: 5px;
+            background: #fff;
+            font-size: 14px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #4c684d;
+            box-shadow: 0 0 4px rgba(76, 104, 77, 0.3);
+        }
+
+        .terms {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 5px 0 20px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .terms input {
+            width: auto;
+        }
+
+        .terms a {
+            color: #365c3b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .register-btn {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 5px;
+            background: #3c5d40;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .register-btn:hover {
+            background: #29472f;
+        }
+
+        .login-text {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .login-text a {
+            color: #315b38;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        @media (max-width: 750px) {
+            .register-container {
+                flex-direction: column;
+            }
+
+            .register-left,
+            .register-right {
+                width: 100%;
+            }
+
+            .register-left {
+                padding: 40px;
+            }
+
+            .register-right {
+                padding: 40px;
+            }
+
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="register-container">
+
+        <!-- LEFT SIDE -->
+        <div class="register-left">
+
+            <div class="logo">
+                <span>🍃</span> RIVERLEAF
+            </div>
+
+            <h1>Welcome to<br>Riverleaf</h1>
+
+            <div class="leaf-line"></div>
+
+            <p>
+                Create your account and become part of
+                the Riverleaf Cafe community.
+            </p>
+
+            <p style="margin-top: 20px;">
+                Good coffee. Good food. Good people.
+            </p>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+        <div class="register-right">
+
+            <h2>Create Account</h2>
+
+            <p class="subtitle">
+                Register to get started with Riverleaf Cafe.
+            </p>
+
+            <form action="#" method="POST">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="firstname">First Name</label>
+                        <input
+                            type="text"
+                            id="firstname"
+                            name="firstname"
+                            placeholder="Enter your first name"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastname">Last Name</label>
+                        <input
+                            type="text"
+                            id="lastname"
+                            name="lastname"
+                            placeholder="Enter your last name"
+                            required>
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Choose a username"
+                        required>
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Create a password"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input
+                            type="password"
+                            id="confirm-password"
+                            name="confirm-password"
+                            placeholder="Confirm password"
+                            required>
+                    </div>
+
+                </div>
+
+
+                <div class="terms">
+                    <input type="checkbox" id="terms" required>
+
+                    <label for="terms">
+                        I agree to the
+                        <a href="#">Terms & Conditions</a>
+                    </label>
+                </div>
+
+
+                <button type="submit" class="register-btn">
+                    CREATE ACCOUNT
+                </button>
+
+            </form>
+
+
+            <p class="login-text">
+                Already have an account?
+                <a href="login.html">Login here</a>
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
