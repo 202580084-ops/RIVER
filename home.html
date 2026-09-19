@@ -1,48 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Riverleaf Cafe</title>
-
+    <title>Riverleaf Cafe - Home</title>
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
 
-    <section class="landing">
+<nav class="navbar">
 
-        <div class="landing-overlay"></div>
+    <a class="nav-logo" href="home.html">
+        🍃 RIVERLEAF
+    </a>
 
-        <div class="landing-content">
+    <div class="nav-links"> 
+        <a class="active" href="home.html">HOME</a>
+        <a href="menu.html">MENU</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+        <a class="logout" href="landing.html">LOGOUT</a>
+    </div>
 
-            <p class="welcome">
-                Welcome to
-            </p>
+</nav>
 
-            <h1>
-                RIVERLEAF<br>
-                CAFE
-            </h1>
+<section class="home-hero">
 
-            <div class="line">
-                ─── 🌿 ───
+    <div class="hero-overlay"></div>
+
+    <div class="home-content">
+
+        <p class="eyebrow light">
+           WELCOME TO RIVERLEAF
+        </p>
+
+        <h1>
+            Good coffee.<br>
+            Good moments.
+        </h1>
+
+        <p>
+            Freshly brewed coffee, delicious food,
+            and a cozy place to slow down.
+        </p>
+
+        <a href="menu.html" class="btn btn-light">
+            EXPLORE OUR MENU
+        </a>
+
+    </div>
+
+</section>
+
+<section class="categories">
+
+    <div class="section-heading">
+        <p class="eyebrow">WHAT WE SERVE</p>
+        <h2>Something for every mood.</h2>
+    </div>
+
+    <div class="category-grid">
+
+        <a href="coffee.html" class="category-card">
+            <div class="card-image coffee-bg"></div>
+            <div class="card-content">
+                <span>01</span>
+                <h3>Coffee</h3>
+                <p>Freshly brewed favorites.</p>
             </div>
+        </a>
 
-            <p class="landing-text">
-                A cozy place where every cup<br>
-                tells a story.
-            </p>
+        <a href="drinks.html" class="category-card">
+            <div class="card-image drinks-bg"></div>
+            <div class="card-content">
+                <span>02</span>
+                <h3>Drinks</h3>
+                <p>Cool and refreshing drinks.</p>
+            </div>
+        </a>
 
-            <a href="navAndBody.html" class="button">
-                ENTER RIVERLEAF
-            </a>
+        <a href="food.html" class="category-card">
+            <div class="card-image food-bg"></div>
+            <div class="card-content">
+                <span>03</span>
+                <h3>Food</h3>
+                <p>Meals made with care.</p>
+            </div>
+        </a>
 
-        </div>
+        <a href="desserts.html" class="category-card">
+            <div class="card-image desserts-bg"></div>
+            <div class="card-content">
+                <span>04</span>
+                <h3>Desserts</h3>
+                <p>Sweet little treats.</p>
+            </div>
+        </a>
 
-    </section>
+        <a href="pastries.html" class="category-card">
+            <div class="card-image pastries-bg"></div>
+            <div class="card-content">
+                <span>05</span>
+                <h3>Pastries</h3>
+                <p>Freshly baked goodness.</p>
+            </div>
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="footer-logo">
+        🍃 RIVERLEAF CAFE
+    </div>
+
+    <p>
+        Brewed with love · Served with warmth
+    </p>
+
+</footer>
 
 </body>
 </html>
