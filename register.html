@@ -1,148 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register | Riverleaf Cafe</title>
 
+<<<<<<< HEAD
   
+=======
+    <title>Sign Up | Riverleaf Cafe</title>
+
+    <link rel="stylesheet" href="index.css">
+>>>>>>> b2e634f (Initial cafe website)
 </head>
 
 <body>
 
-    <div class="register-container">
+<main class="account">
 
-        <!-- LEFT SIDE -->
-        <div class="register-left">
+    <!-- LEFT SIDE -->
+    <section class="account-image register-image">
 
-            <div class="logo">
-                <span>🍃</span> RIVERLEAF
-            </div>
+        <div class="account-shade"></div>
 
-            <h1>Welcome to<br>Riverleaf</h1>
+        <div class="account-top">
+            <a href="landing.html">← BACK TO LANDING</a>
+        </div>
 
-            <div class="leaf-line"></div>
+        <div class="account-brand">
+          
+            🍃RIVERLEAF
+        </div>
 
-            <p>
-                Create your account and become part of
-                the Riverleaf Cafe community.
+        <div class="account-copy">
+
+            <p class="account-small">
+                JOIN RIVERLEAF
             </p>
 
-            <p style="margin-top: 20px;">
-                Good coffee. Good food. Good people.
+            <h1>
+                Make yourself<br>
+                at home.
+            </h1>
+
+            <div class="account-line"></div>
+
+            <p class="account-script">
+                good coffee starts with a warm welcome.
             </p>
 
         </div>
 
+        <div class="account-bottom">
+            COFFEE · FOOD · PASTRIES
+        </div>
 
-        <!-- RIGHT SIDE -->
-        <div class="register-right">
+    </section>
 
-            <h2>Create Account</h2>
 
-            <p class="subtitle">
-                Register to get started with Riverleaf Cafe.
-            </p>
+    <!-- RIGHT SIDE -->
+    <section class="account-form">
 
-            <form action="#" method="POST">
+        <div class="form-box register-box">
 
-                <div class="form-row">
+            <div class="form-heading">
 
-                    <div class="form-group">
-                        <label for="firstname">First Name</label>
+            
+
+                <h2>
+                    Create account
+                </h2>
+
+                <p class="sub">
+                    Create your account and make yourself comfortable.
+                </p>
+
+            </div>
+
+
+            <form action="login.html" method="get">
+
+                <div class="name-row">
+
+                    <div class="input-group">
+
+                        <label for="firstName">
+                            FIRST NAME
+                        </label>
+
                         <input
                             type="text"
-                            id="firstname"
-                            name="firstname"
-                            placeholder="Enter your first name"
-                            required>
+                            id="firstName"
+                            name="firstName"
+                            placeholder="First name"
+                            required
+                        >
+
                     </div>
 
-                    <div class="form-group">
-                        <label for="lastname">Last Name</label>
+
+                    <div class="input-group">
+
+                        <label for="lastName">
+                            LAST NAME
+                        </label>
+
                         <input
                             type="text"
-                            id="lastname"
-                            name="lastname"
-                            placeholder="Enter your last name"
-                            required>
+                            id="lastName"
+                            name="lastName"
+                            placeholder="Last name"
+                            required
+                        >
+
                     </div>
 
                 </div>
 
 
-                <div class="form-group">
-                    <label for="email">Email Address</label>
+                <div class="input-group">
+
+                    <label for="email">
+                        EMAIL
+                    </label>
+
                     <input
                         type="email"
                         id="email"
                         name="email"
-                        placeholder="Enter your email"
-                        required>
+                        placeholder="you@example.com"
+                        required
+                    >
+
                 </div>
 
 
-                <div class="form-group">
-                    <label for="username">Username</label>
+                <div class="input-group">
+
+                    <label for="newUsername">
+                        USERNAME
+                    </label>
+
                     <input
                         type="text"
-                        id="username"
+                        id="newUsername"
                         name="username"
                         placeholder="Choose a username"
-                        required>
+                        required
+                    >
+
                 </div>
 
 
-                <div class="form-row">
+                <div class="name-row">
 
-                    <div class="form-group">
-                        <label for="password">Password</label>
+                    <div class="input-group">
+
+                        <label for="newPassword">
+                            PASSWORD
+                        </label>
+
                         <input
                             type="password"
-                            id="password"
+                            id="newPassword"
                             name="password"
-                            placeholder="Create a password"
-                            required>
+                            placeholder="Create password"
+                            required
+                        >
+
                     </div>
 
-                    <div class="form-group">
-                        <label for="confirm-password">Confirm Password</label>
+
+                    <div class="input-group">
+
+                        <label for="confirmPassword">
+                            CONFIRM
+                        </label>
+
                         <input
                             type="password"
-                            id="confirm-password"
-                            name="confirm-password"
+                            id="confirmPassword"
+                            name="confirmPassword"
                             placeholder="Confirm password"
-                            required>
+                            required
+                        >
+
                     </div>
 
                 </div>
 
 
-                <div class="terms">
-                    <input type="checkbox" id="terms" required>
+                <label class="terms">
 
-                    <label for="terms">
-                        I agree to the
-                        <a href="#">Terms & Conditions</a>
-                    </label>
-                </div>
+                    <input type="checkbox" required>
+
+                    <span>
+                        I agree to the Riverleaf Cafe
+                        <a href="#">terms</a> and conditions.
+                    </span>
+
+                </label>
 
 
-                <button type="submit" class="register-btn">
-                    CREATE ACCOUNT
+                <button type="submit" class="form-button">
+
+                    <span>CREATE ACCOUNT</span>
+                    <span>→</span>
+
                 </button>
 
             </form>
 
 
-            <p class="login-text">
+            <div class="form-divider">
+                <span>OR</span>
+            </div>
+
+
+            <div class="form-bottom">
+
                 Already have an account?
-                <a href="login.html">Login here</a>
-            </p>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+            </div>
+
+
+            <div class="form-footer">
+                🍃 Brewed with love · Served with warmth
+            </div>
 
         </div>
 
-    </div>
+    </section>
+
+</main>
 
 </body>
 </html>
